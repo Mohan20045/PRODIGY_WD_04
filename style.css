@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(90deg,#E6DADA,pink,#CCCCFF);;
+    height: 580px;
+    width: 100%;
+    background-size: contain;
+}
+    
+
+.navbar{
+    color: white;
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.myname{
+    font-size: 40px;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.btn{
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-image: linear-gradient(90deg,#CCCCFF,pink);
+    padding: 5px;
+    color: black;
+    border-radius: 10px;
+}
+
+.page{
+    height: 450px;
+    width: 90%;
+    border: 2px solid white;
+    margin-top: 40px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+} 
+
+.myphoto{
+    width:40%;
+    position: relative;
+    left: 10px;
+}
+
+#photo{
+    height:430px;
+    width: 350px;
+    object-fit: cover;
+    object-position: -70px;
+    border-radius: 10%;
+}
+.home-des{
+    color: black;
+    font-size: 18px;
+}
+
+.trans{
+    transition: ease-out;
+}
+
+.hide{
+    display: none;
+}
+
+.media-list{
+    font-size: 18px;
+    text-decoration: None;
+    color: black;
+}
+
+.media-list a,.course-des a{
+    text-decoration: None;
+    color:brown;
+}
+
+.media-list a:hover,.course-des a:hover{
+    transition-duration: 0.2s;
+    background-image: linear-gradient(90deg, #F98866, #FFF2D7);
+    color: black;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+@media(max-width:320px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+
+    .navbar{
+        height: 100px;
+        flex-direction: column;
+    }
+    
+    .myname{
+        font-size: 28px;
+    }
+    
+    .menu{
+        gap: 10px;
+        padding: 10px;
+        background-color: rgb(236, 234, 234);
+    }
+
+    .btn{
+        font-size: 16px;
+        color: black;
+    }
+
+    .btn:hover{
+        padding: 5px;
+        border-radius: 8px;
+        background-image: linear-gradient(90deg,#393646,#4F4557,#6D5D6E);
+        color: white;
+    }
+
+    .page{
+        height: 750px;
+        border: none;
+        margin-left: 20px;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-top: 20px;
+    } 
+
+    .myphoto{
+        height: 200px;
+        width: 200px;
+        position: relative;
+        left: 10px;
+    }
+
+    #photo{
+        height:200px;
+        width: 200px;
+        object-fit: cover;
+        object-position: -15px;
+        border-radius: 50%;
+    }
+    
+}
